@@ -1,0 +1,238 @@
+,,,"жёлтым выделяем ТОЛЬКО то, что изменилось в этом файле по сравнению с предыдущим. Перед этим все старые выделения убираем!",,,,,,,,,,,,,,,,
+,,,Удалена ,,,,,,,,,,,,,,,,
+,79255254541 Федор ,,свободный для новых вм,,,,,,,,,,,,,,,,
+,,,"не совпадало с ВМ  или отсутвовал в файле( вм жива и работает), Выставленно ральное значение  ",,,,,,,,,,,,,,,,
+,,,временные из бекапа ,,,,,,,,,,,,,,,,
+,,,Шлюз по умолчанию  10.20.42.23 для новых вм,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,Имя севера (VM),vCPU,RAM,SSD C,SSD E,SSD Суммарно,HDD,,Цена с НДС,# IP,IP-внутр,IP-public,Ссылка на Grafana,Среднее потребленее CPU за 7 дней,Сервисы,Описание сервиса,Кто владеет,К удалению,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,10.20.42.1,,,,,,,,зачем нужна эта пустая строчка?
+,14201_win22_AD,2,32,40,,40,,,3 480,,10.20.42.2,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=ad1.devops.ics.local&var-cpumode=dpc,"3,17%",AD replica 1,,DO,,
+,14202_win2022_AD,2,4,80,,80,,,1 560,,10.20.42.3,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=ad2.devops.ics.local&var-cpumode=dpc,"5,43%",AD replica 2,,DO,,
+,14203_ubuntu2204_node07,2,4,650,,650,,,6 120,,10.20.42.4,,, ,Kubernetes01 node7,Kubernetes,DO,,
+,14204_ubuntu2204_node08,2,4,650,,650,,,6 120,,10.20.42.5,,,,Kubernetes01 node8,Kubernetes,DO,,
+,14205_ubuntu2204_node09,2,4,650,,650,,,6 120,,10.20.42.6,,,,Kubernetes01 node9,Kubernetes,DO,,
+,14206_ubuntu2204_node06,2,4,650,,650,,,6 120,,10.20.42.7,,,,Kubernetes01 node6,Kubernetes,DO,,
+5 Ghz,14207_win22,4,16,100,600,700,,,10 960,,10.20.42.8,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=unipharm-cardio.sellout.ics.local&var-cpumode=dpc,"5,76%",SO Unipharm,,SO Unipharm,,
+,14208_ubuntu,8,32,256,,256,,,7 008,,10.20.42.9,,,,modules dev OpenRootService,Оптимизация маршрутов на карте для пилотов,MOD,,это уже в МЛ передать?
+,14209_win2016r2_Stage_MDTC_Dev,2,8,170,700,870,,,8 200,,10.20.42.10,,Не пингуется,,,,,,
+,142101_ubuntu2204_k8s01_mng01,4,4,40,,40,,,1 840,,10.20.42.102,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=mgr1.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"52,80%",Kubernetes01 manager 1,Kubernetes,DO,,
+,142102_ubuntu2204_k8s01_mng02,4,4,40,,40,,,1 840,,10.20.42.103,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=mgr2.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"42,00%",Kubernetes02 manager 2,Kubernetes,DO,,
+,142103_ubuntu2204_k8s01_mng03,4,4,40,,40,,,1 840,,10.20.42.104,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=mgr3.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"56,90%",Kubernetes03 manager 3,Kubernetes,DO,,
+,142104_ubuntu2204_k8s01_node01,8,32,120,,120,,,5 920,,10.20.42.105,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=node1.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"19,90%","Flux
+Gramax dev
+Gramax prod
+ingress Nginx
+istio-ingress
+keda-admission-webhooks
+kube-prometheus-stack
+csi-driver-nfs
+mdt-develop-tests-mssql
+mdt-demo-beta
+mdt-demo-develop
+mdt-demo-main
+mdt-develop-pgsql
+mdt-main-pgsql
+mdt-main-tests-mssql
+metallb-system
+metrics-server
+quiz-prod (Web Mobile)
+quiz-prod-old (Web Есть задача на Devops QZ-10121)
+mdt-quiz-dev1 (MDT Dev-stand)
+mdt-quiz-dev2 (MDT Dev-stand)
+quiz-dev1 (Web Dev-stand)
+quiz-dev2 (Web Dev-stand)
+quiz-dev3 (Web Dev-stand)
+quiz-e2e (Web Dev-stand)
+quiz-preprod (Web Dev-stand)
+quiz-prod-demo (Web Demo-stand)
+quiz-test1 (Web Dev-stand)",Kubernetes,DO,,
+,142105_ubuntu2204_k8s01_node02,8,32,120,,120,,,5 920,,10.20.42.106,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=node2.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"37,70%","Flux
+Gramax dev
+Gramax prod
+ingress Nginx
+istio-ingress
+keda-admission-webhooks
+kube-prometheus-stack
+csi-driver-nfs
+mdt-develop-tests-mssql
+mdt-demo-beta
+mdt-demo-develop
+mdt-demo-main
+mdt-develop-pgsql
+mdt-main-pgsql
+mdt-main-tests-mssql
+metallb-system
+metrics-server
+quiz-prod (Web Mobile)
+quiz-prod-old (Web Есть задача на Devops QZ-10121)
+mdt-quiz-dev1 (MDT Dev-stand)
+mdt-quiz-dev2 (MDT Dev-stand)
+quiz-dev1 (Web Dev-stand)
+quiz-dev2 (Web Dev-stand)
+quiz-dev3 (Web Dev-stand)
+quiz-e2e (Web Dev-stand)
+quiz-preprod (Web Dev-stand)
+quiz-prod-demo (Web Demo-stand)
+quiz-test1 (Web Dev-stand)",Kubernetes,DO,,
+,142106_ubuntu2204_k8s01_node03,8,32,120,500,620,,,9 920,,10.20.42.107,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=node3.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"49,50%","Flux
+Gramax dev
+Gramax prod
+ingress Nginx
+istio-ingress
+keda-admission-webhooks
+kube-prometheus-stack
+csi-driver-nfs
+mdt-develop-tests-mssql
+mdt-demo-beta
+mdt-demo-develop
+mdt-demo-main
+mdt-develop-pgsql
+mdt-main-pgsql
+mdt-main-tests-mssql
+metallb-system
+metrics-server
+quiz-prod (Web Mobile)
+quiz-prod-old (Web Есть задача на Devops QZ-10121)
+mdt-quiz-dev1 (MDT Dev-stand)
+mdt-quiz-dev2 (MDT Dev-stand)
+quiz-dev1 (Web Dev-stand)
+quiz-dev2 (Web Dev-stand)
+quiz-dev3 (Web Dev-stand)
+quiz-e2e (Web Dev-stand)
+quiz-preprod (Web Dev-stand)
+quiz-prod-demo (Web Demo-stand)
+quiz-test1 (Web Dev-stand)",Kubernetes,DO,,
+,142107_ubuntu2204_k8s01_node04,8,32,120,,120,,,5 920,,10.20.42.108,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=node4.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"77,20%","Flux
+Gramax dev
+Gramax prod
+ingress Nginx
+istio-ingress
+keda-admission-webhooks
+kube-prometheus-stack
+csi-driver-nfs
+mdt-develop-tests-mssql
+mdt-demo-beta
+mdt-demo-develop
+mdt-demo-main
+mdt-develop-pgsql
+mdt-main-pgsql
+mdt-main-tests-mssql
+metallb-system
+metrics-server
+quiz-prod (Web Mobile)
+quiz-prod-old (Web Есть задача на Devops QZ-10121)
+mdt-quiz-dev1 (MDT Dev-stand)
+mdt-quiz-dev2 (MDT Dev-stand)
+quiz-dev1 (Web Dev-stand)
+quiz-dev2 (Web Dev-stand)
+quiz-dev3 (Web Dev-stand)
+quiz-e2e (Web Dev-stand)
+quiz-preprod (Web Dev-stand)
+quiz-prod-demo (Web Demo-stand)
+quiz-test1 (Web Dev-stand)",Kubernetes,DO,,
+5 Ghz,142108_ubuntu_node5,8,32,120,,120,,,11 680,,10.20.42.109,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-host=node5.kubernetes01.ics.local:9100&var-job=devops-nodeexporter-kubernetes01,"15,00%",Runner e2e,,DO,,чей сервер? Почему runner e2e? грамакс?
+,14210_win22,8,12,80,512,592,,,8 096,,10.20.42.11,,не мониторится,,demo Потенциал продаж,Используется для демонстраций потенциальным клиентам,MOD,,
+5 Ghz,14211_win22,8,32,300,100,400,,,13 920,,10.20.42.12,,не мониторится,,Naos Demo,,NAOS,,мониторинг?
+,14212_win2016r2_MDLZ_Prod__,6,18,100,2048,2148,,,0,,10.20.42.13,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=prod.mdlz.ics.local&var-cpumode=dpc,"44,70%",MDLZ prod,PhotoTool,MDLZ,Планируется к удалению,DCORE
+,14213_win2022_DCore_Dev,4,12,130,140,270,,,0,,10.20.42.14,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=vm14213.ics.local&var-cpumode=dpc,"5,15%",MDLZ dev,MDLZ dev c Dcore,MDLZ,Планируется к удалению,DCORE
+,14214_win22_Opticell,4,24,70,350,420,,,6 480,,10.20.42.15,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=opticell.inta.ics.local&var-cpumode=dpc,"17,60%",Opticell prod,,Opticell,,
+5 Ghz,14215_win22,6,24,60,3072,3132,,,33 096,,10.20.42.16,,n/a,,tenant SO Mondeliz,,SO MDLZ,,почему такой дорогой сервер и почему нет мониторинга?
+,14216_win22,4,16,60,500,560,,,6 960,,10.20.42.17,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=zambon.sellout.ics.local&var-cpumode=dpc,"27,10%",tenant SO Zambon,,SO Zambon,,
+5 Ghz,14217_ubuntu2204,2,8,300,,300,,,5 080,,10.20.42.18,,,,,,,,
+,14218_ubuntu2204,1,1,20,,20,,,740,1,10.20.42.19,194.226.164.220,не мониторится,,angie proxy legacy,Поддерживает старые устройства заказчиков,DO,,
+5 Ghz,14219_win22_quiz,12,48,100,1274,1374,,,27 072,,10.20.42.20,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=prod.quiz.ics.local&var-cpumode=dpc,"5,62%",Quiz prod,RB Quiz,Quiz RB,,
+5 Ghz,14220_win2016r2_SO_Dev,4,16,128,4096,4224,,,39 152,,10.20.42.21,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=vm14220.ics.local&var-cpumode=dpc,"8,54%",Sellout dev,,SO,Удалить,Дорогой сервер!
+5 Ghz,14221_ubuntu22,8,32,260,,260,,,12 800,,10.20.42.22,,https://grafana.ics-it.ru/d/rYdddlPWj/node-exporter-full?orgId=1&refresh=1m&var-DS_PROMETHEUS=default&var-job=nodeexporter-gramax&var-node=portainer.devops.ics.local%3A9100&var-diskdevices=%5Ba-z%5D%2B%7Cnvme%5B0-9%5D%2Bn%5B0-9%5D%2B&from=1766361173631&to=1766371973631,,Portainer ,,Gramax,,Этот сервер используется? Почему нет графаны?
+,14222_MikroTik-CHR,1,1,1,,1,,,788,2,10.20.42.23,194.190.8.135  194.226.164.235,,-,Microtic ,,DO,,
+,был занят но более не пингуется,,,,,,,,,,10.20.42.24,,,,,,,,
+,был занят но более не пингуется,,,,,,,,,,10.20.42.25,,,,,,,,
+,14225_win22 ,4,8,120,,120,,,2 800,,10.20.42.26,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=adfs1.devops.ics.local&var-cpumode=dpc,"0,46%",ADFS replica 1,SSO SAML 2.0,DO,,
+,14226_win22,8,32,512,,512,,,9 056,,10.20.42.27,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=densply-sirona.intnsa.ics.local&var-cpumode=dpc,"22,20%",Densply sirona prod,,DNTS,,
+,был занят но более не пингуется,,,,,,,,,,10.20.42.28,,,,,,,,
+,14228_win22,6,32,130,1536,1666,,,17 688,,10.20.42.29,,,,MOD dev,препрод стенд типового BI проекта,MOD,,Почему и MOD dev и J&J dev? Может сюда разместить forecast?
+5 Ghz,14229_win22,8,32,100,2560,2660,,,32 000,,10.20.42.30,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=jtnl.sellout.ics.local&var-cpumode=dpc,"7,87%",tenant SO JTNL,,SO JTNL,,
+5 Ghz,14230_win22,6,24,100,1024,1124,,,17 032,,10.20.42.31,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=kimberly-clark.sellout.ics.local&var-cpumode=dpc,"4,67%",tenant SO KC,tenant SO KC + office service,SO KC,,
+,14231_win2019_Quiz_Dev,4,16,150,700,850,,,9 280,,10.20.42.32,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=dev.quiz.ics.local&var-cpumode=dpc,"14,40%",Quiz dev,RB Quiz dev,Quiz,,
+5 Ghz,14232_win22,4,32,160,1824,1984,,,23 792,,10.20.42.33,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=opella.sellout.ics.local&var-cpumode=dpc,"26,90%",tenant SO Opella,,SO Opella,,
+,,,,,,,,,,,10.20.42.34,,,,,,,,
+,ип адрес занят 14293,,,,,,,,,,10.20.42.35,,,,,,,,
+,14235_ubuntu22,4,4,40,35,75,,,4 120,10,10.20.42.36,"194.190.8.100
+194.190.8.224
+194.190.8.146
+194.190.8.171
+194.190.8.188
+194.190.8.151
+194.226.164.238
+194.226.164.128
+194.226.164.129
+194.226.164.145 ",https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=angie1.ics.local:9100,"52,50%",Angie proxy,WAF,DO,,
+5 Ghz,14236_win22,2,8,80,,80,,,3 320,,10.20.42.37,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=office-service.devops.ics.local&var-cpumode=dpc,"0,42%",office-service для SO,,SO,,нужен?
+,14237_centos7,2,4,30,,30,,,1 160,,10.20.42.38,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=passwork.devops.ics.local:9100,"1,70%",passwork,,DO,,ORG?
+,14238_ubuntu2204_vpn,1,2,10,,10,,,740,1,10.20.42.39,194.190.8.133,,,VPN Russia,Для доступа к Российским ресурсам,DO,Планируется к удалению,Нужно собрать обратную связь от сотрудников зарубежом
+,14239_ubuntu2204_stor53,2,2,,,,1034,,2 828,,10.20.42.40,,,,Медленное хранилище для SO+,,SO,,
+,ип адрес занят vm14271,,,,,,,,,,10.20.42.41,,,,,,,,не понял для чего эта строчка
+,14241_win2022_SPS_Prod,8,32,110,910,1020,,,13 120,,10.20.42.42,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=sps-rb.inta.ics.local&var-cpumode=dpc,"31,30%",RB SPS prod,,RB,,
+,14242_ubuntu2204_prometheus,6,16,1024,,1024,,,11 272,,10.20.42.43,,,,Prometheus для DevOps,,DO,,Основной прометеус
+5 Ghz,14243_ubuntu2004_gitlab-runner_linux_amd64_,10,40,585,,585,,,18 080,,10.20.42.44,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=general-runner.devops.ics.local:9100,"39,80%",gitlab runner,"Используют все проекты, основной раннер",DO,,ДО: кто его использует? Что там запускается?
+,14244_win22_Dev_Zambon,4,32,80,770,850,,,10 560,,10.20.42.45,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=dev-zambon.intc.ics.local&var-cpumode=dpc,"26,90%",Zambon dev,,Zambon,,что такое замбон?
+,14245_ubuntu_10TB,2,6,,,0,10250,,21 580,,10.20.42.46,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=nodeexporter-storage-linux&var-host=veeam-storage-node1.ics.local:9100,"1,30%",Veeam storage,backup hw SO+,DO,,это ведь к селлауту?
+,14246_ubuntu_10tb,2,6,,,0,10250,,21 580,,10.20.42.47,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=nodeexporter-storage-linux&var-host=veeam-storage-node2.ics.local:9100,"5,60%",Veeam storage RB_MDT,backup hw RB,DO,,это ведь к RB?
+,14247_win22_Binnopharm_SO,6,24,100,1836,1936,,,19 208,,10.20.42.48,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&var-server=vm14247.ics.local&var-cpumode=dpc,"63,50%",tenant SO Binnopharm, ,SO Binnopharm,,
+,14248_truenas_10TB,4,8,,,0,10250,,22 340,,10.20.42.49,,,,truenas RB,Диск подключён к 10.20.42.21. 14220_win2016r2_SO_Dev. Для SFTP для RB/ Нужно настроить бэкап на S3,SO,,Что тут? Надо отделить МДЛЗ от РБ
+,50-55 Занято физикой см ниже,,,,,,,,0,,10.20.42.50-55,Занято физикой см ниже,,,,,,,
+,14260_devlinux_Prod,6,16,300,,300,,,5 480,,10.20.42.61,,,,KMS,KMS Server для активации Windows и MS office,DO,,Это нужно? 5к для KMS?
+5 Ghz,14261_win2022_gitlab-runner_windows_amd64,3,12,610,,610,,,8 900,,10.20.42.62,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=windows-runner.devops.ics.local&var-cpumode=dpc,"5,36%","Gitlab Runner WIndows
+instancer","builder, ETL, sellout-connector,OCI Images",DO,,кто использует?
+,14262_truenas_10TB,4,8,,,,10250,,0,,10.20.42.63,,,,iscsi drive MDLZ,Диск подключён к 10.20.42.13. iscsi drive. Дешевое хранилище на жестких дисках без бекапа,MDLZ,,DCORE
+,ип адрес занят vm14296,,,,,,,,,,10.20.42.64,,,,,,,,
+,14264_truenas_2TB,2,4,,,,2058,,0,,10.20.42.65,,,,iscsi drive for MDLZ dev,Диск подключён к 10.20.42.14. 14213_win2022_DCore_Dev,MDLZ,,DCORE
+,14265_win2022_Data_Quality_Prod,4,16,120,1124,1244,,,12 432,,10.20.42.66,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=data-quality.mod.ics.local&var-cpumode=dpc,"7,86%",DQ prod,серверная часть Data Quality c DCore,MOD,,нужно?
+,14266_win22_init_a_dev,4,64,200,500,700,,,11 920,,10.20.42.67,,,,INT A dev & dev J&J,JTNL dev,JTNL,,нужно?
+,14267_win2022_syngenta,8,64,80,600,680,,,12 960,,10.20.42.68,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=syngenta.intnsa.ics.local&var-cpumode=dpc,"56,00%",Syngenta prod и preprod,,Syngenta,,
+,,,,,,,,,,,10.20.42.69,,,,,,,,
+,,,,,,,,,,,10.20.42.70,,,,,,,,
+,14270_win22_Account,6,16,120,200,320,,,5 640,,10.20.42.71,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=account.intc.ics.local&var-cpumode=dpc,"6,72%",ACC prod,,ACC,,org
+5 Ghz,14271_ubuntu2204,4,16,328,,328,,,7 984,,10.20.42.41,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=youtrack.devops.ics.local:9100,"26,10%",Youtrack prod,,DO,,org
+,14271_ubuntu2204_dev-yt(10.20.42.141),4,16,328,,328,,,5 104,,10.20.42.141,,не мониторится,,Dev Youtrack,,STND,,нужен этот сервер?
+,14272_win22,4,16,120,,120,,,3 440,,10.20.42.73,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=veeam.devops.ics.local&var-cpumode=dpc,"27,90%",Veeam сервис для backup HW,,DO,,что туда бекапится?
+,14273_win22,4,16,60,900,960,,,10 160,,10.20.42.74,,,,tenant SO JTI,,SO JTI,,
+,,,,,,,,,,,10.20.42.75,,,,,,,,
+5 Ghz,14275_win22,4,8,90,200,290,,,6 400,,10.20.42.76,,,,"Quiz master instance для поддержки мультитенанта
+Quiz preprod",Через него работают обновления,Quiz,,почему такой жирный сервер? Нужен он?
+,,,,,,,,,,,10.20.42.77,,,,,,,,
+,,,,,,,,,,,10.20.42.78,,,,,,,,
+,14278_ubuntu2204_int_stor,2,2,,,,2058,,4 876,,10.20.42.79, ,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=windows-exporter-int-a&var-host=storage01.inta.ics.local:9100,"1,80%",iscsi drive for vm14266 INT A & J&J,"Хранилище JTNL, Heinz, NAOS, OPTC и все пилоты по планированию",JTNL + Heinz  +NAOS + OPTC,,
+,14279_win22,4,16,80,240,320,,,5 040,,10.20.42.80,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=mssql-ci-cd.devops.ics.local&var-cpumode=dpc,"3,86%",Хранилище downstream БД beta,"Хранятся БД, которые разворачиваются через CI/CD",DO,,реально нужен отдельный сервер?
+,14280_win22,4,32,160,540,700,,,9 360,,10.20.42.81,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=dev.mod.ics.local&var-cpumode=dpc,"43,10%",Modules demo,"Прод демо инстанс для демонстрации модулей не BI проекта(DQ(geo, hl, le) клиент, automapping, datacheck)",MOD,,реально нужен?
+,,,,,,,,,,,10.20.42.82,,,,,,,,
+,14282_win22,4,8,120,,120,,,2 800,,10.20.42.83,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=adfs2.devops.ics.local&var-cpumode=dpc,"0,63%",ADFS replica 2,SSO SAML 2.0,DO,,
+,14283_ubuntu2204,8,32,1024,,1024,,,13 152,,10.20.42.84,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=elastic.devops.ics.local:9100,"32,60%",Elastic stack,"Холодное хранилище логов, быстро работает с большим количеством данных",DO,,
+,14284_ubuntu22_8TB,2,2,,,,8200,,0,,10.20.42.85,,,,iscsi storage for MDLZ,iscsi storage for MDLZ,MDLZ,Планируется к удалению,DCORE
+,14285_ubuntu2204,2,4,80,1124,1204,,,10 552,,10.20.42.86,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=sftp-sellout.devops.ics.local:9100,"36,50%",SO SFTP для загрузок,,SO ,,
+,втрой и на  14279,,,,,,,,,,10.20.42.87,,,,,,,,
+,14287_win22,4,8,100,100,200,,,3 440,,10.20.42.88,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=education.intc.ics.local&var-cpumode=dpc,"6,13%",Education,INTA & J&J,EDU,Удалить,
+,,,,,,,,,,,10.20.42.89,,,,,,,,
+,14289_win22,4,8,100,1024,1124,,,10 832,,10.20.42.90,,,,,,,Удалить,
+,14290_win22,8,16,100,1024,1124,,,12 672,,10.20.42.91,,,,INT C dev,ACC + Octopus + Unipharm dev,ACC + Octopus + Unipharm,,
+,,,,,,,,,,,10.20.42.92,,,,,,,,
+,,,,,,,,,,,10.20.42.93,,,,,,,,
+5 Ghz,14293_ubuntu2204,5,20,1024,,1024,,,14 892,,10.20.42.94,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=gitlab.devops.ics.local:9100,"38,50%",gitlab,,DO,,
+,14294_ubuntu2204,2,2,40,,40,,,1 080,,10.20.42.95,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=wg-vpn.devops.ics.local:9100,"2,40%",WG для доступа к роутерам (microtik),,DO,,
+,,,,,,,,,,,10.20.42.96,,,,,,,,
+,14296_ubuntu2204,2,8,,,,15288,,31 816,,10.20.42.97,,https://grafana.ics-it.ru/d/ov0oEgdik/linux-hosts-metrics?orgId=1&from=now-7d&to=now&var-job=devops-nodeexporter-linux&var-host=database-backup.devops.ics.local:9100,"7,20%",Файловое хранилище для backup БД MS SQL,,DO,,
+,14297_win22,4,16,100,,100,,,3 280,,10.20.42.98,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=octopus.intc.ics.local&var-cpumode=dpc,"12,60%",Octopus prod,,Octopus,,
+5 Ghz,14298_win22,8,32,100,2048,2148,,,27 904,,10.20.42.99,,https://grafana.ics-it.ru/d/000000014/windows-node?orgId=1&from=now-7d&to=now&var-server=sanofi.sellout.ics.local&var-cpumode=dpc,"16,60%",tenant SO Sanofi,,SO Sanofi,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,"758 424,00",,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,150-159 Занято физикой см ниже,,,,,,,,,,10.20.42.150-159,Занято физикой см ниже,,,,,,,
